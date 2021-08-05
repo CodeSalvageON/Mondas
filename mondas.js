@@ -3,5 +3,6 @@ const window_body = document.querySelector(".window-body.hud-body");
 const fps = document.getElementById("fps");
 
 panel_title.innerText = "MONDAS NETWORK";
+fps.innerText = "CONNECTED TO MONDAS";
 window_body.style.opacity = "0.8";
 window_body.style.backgroundColor = "blue";
