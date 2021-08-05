@@ -3,4 +3,4 @@ const window_body = document.querySelector(".window-body.hud-body");
 
 panel_title.innerText = "MONDAS NETWORK";
 window_body.style.opacity = "0.8";
-window_body.style.backgroundColor = "powderblue";
+window_body.style.backgroundColor = "blue";
