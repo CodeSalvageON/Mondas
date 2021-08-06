@@ -1,14 +1,24 @@
-const panel_title = document.querySelector(".title-bar-text");
-const window_body = document.querySelector(".window-body.hud-body");
-const fps = document.getElementById("fps");
-
 const sand_canvas = document.getElementById("sand-canvas");
-const sky_canvas = document.getElementById("sky-canvas");
+const dataURL = sand_canvas.toDataURL();
 
-const sand_render = sand_canvas.getContext("2d");
-const sky_render = sky_canvas.getContext("2d");
+alert("Press C to open the prompt. Type help to get a list of commands.");
 
-panel_title.innerText = "MONDAS NETWORK";
-fps.innerText = "CONNECTED TO MONDAS";
-window_body.style.opacity = "0.8";
-window_body.style.backgroundColor = "blue";
+function openPrompt () {
+  const input = prompt("Command: ");
+  
+  if (input.toLowerCase() === "help") {
+    alert("Press C to open the prompt, type upload to upload your orb, and type browse to browse orbs.");
+  }
+  
+  else {
+    alert("That's not a command!");
+  }
+}
+
+document.onkeypress = function (eventKeyName) {
+  eventKeyName = eventKeyName || window.event;
+  
+  if (eventKeyName.keyCode === 67) {
+    openPrompt();
+  } 
+};
