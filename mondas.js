@@ -1,6 +1,10 @@
 const sand_canvas = document.getElementById("sand-canvas");
 const dataURL = sand_canvas.toDataURL();
 
+let pre_title = "";
+
+const fps = document.getElementById("fps");
+
 alert("Type openPrompt() in the console to bring up the prompt. Type help to get a list of commands.");
 
 function openPrompt () {
@@ -11,9 +15,8 @@ function openPrompt () {
   }
   
   else if (input.toLowerCase() === "upload") {
-    const orb_title = prompt("Orb Title: ");
-    
-    
+    alert("Your upload link is in the bottom right corner of the screen.");
+    fps.innerHTML = "<a href='' target='_blank'>Upload!</a>";
   }
   
   else {
