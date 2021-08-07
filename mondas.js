@@ -15,8 +15,8 @@ function openPrompt () {
   }
   
   else if (input.toLowerCase() === "upload") {
-    alert("Your upload link is in the bottom right corner of the screen.");
-    fps.innerHTML = "<a href='https://seven-of-nine.codesalvageon.repl.co/upload?title=gg&url=" + dataURL + "' target='_blank'>Upload!</a>";
+    window.open("https://seven-of-nine.codesalvageon.repl.co/upload?title=gg&url=" + dataURL);
+    alert("Uploaded orb!");
   }
   
   else {
